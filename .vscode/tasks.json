@@ -1,0 +1,72 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "👀watch-web",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "--project",
+                "${workspaceFolder}/BlazorHybrid.Web"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "📤publish-forms",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "-r",
+                "win-x64",
+                "--self-contained",
+                "${workspaceFolder}/BlazorHybrid.Forms",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign",
+                "-o",
+                "${workspaceFolder}/publish/BlazorHybrid.Forms"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "📤publish-wpf",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "-r",
+                "win-x64",
+                "--self-contained",
+                "${workspaceFolder}/BlazorHybrid.Wpf",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign",
+                "-o",
+                "${workspaceFolder}/publish/BlazorHybrid.Wpf"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "🛠️build-web",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/BlazorHybrid.Web",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "🧹clean",
+            "type": "shell",
+            "command": "dotnet clean -v m --nologo -c Debug && dotnet clean -v m --nologo -c Release",
+            "problemMatcher": [],
+        }
+    ]
+}

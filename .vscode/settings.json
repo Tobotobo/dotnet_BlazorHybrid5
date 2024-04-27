@@ -1,0 +1,4 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "dotnet.server.useOmnisharp": true,
+}
