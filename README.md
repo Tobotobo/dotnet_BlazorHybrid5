@@ -58,7 +58,7 @@
   * 🛠️build-web
   * 🧹clean
 
-※ publish ではワークスペースのルートに publish フォルダが作成される。
+※ publish ではワークスペース直下に publish フォルダが作成される。
 
 ### Wpf 追加
 ```
