@@ -9,7 +9,7 @@
 * profile 更新
 
 ## ターゲット
-* まだデスクトップアプリ開発も必用だが、Web アプリやスマホアプリ開発にもつなげていきたい
+* まだデスクトップアプリ開発が必用だが、Web アプリやスマホアプリ開発につなげていきたい
 * 開発環境が Windows の Visual Studio に縛られているのを脱却したい
 
 ## 想定する使い方
@@ -52,8 +52,8 @@
   * .NET Core Launch (Web)
   * .NET Core Attach
 * タスク
-  * 👀watch-web ※`Ctrl + Shift + B`
-  * 📤publish-forms ※ルートに publish フォルダ
+  * 👀watch-web `Ctrl + Shift + B`
+  * 📤publish-forms
   * 📤publish-wpf
   * 🛠️build-web
   * 🧹clean
