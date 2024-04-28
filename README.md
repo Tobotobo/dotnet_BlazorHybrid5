@@ -22,6 +22,9 @@
 * 一通りできたらタスク「📤publish-forms」や「📤publish-wpf」で実行ファイルを作成する  
   ※スマホアプリは未実装（今後追加したい）
 
+## トラブルシューティング
+* [開発コンテナでプロファイルを適用すると「... のファイル システム プロバイダーが見つかりません」と表示されワークスペースが開けない](https://github.com/Tobotobo/dotnet_BlazorHybrid5/issues/1)
+
 ## 参考サイト
 感謝！
 * [ねこじょーかー/Blazor HybridとBlazor Web AppのUIをRCLで共通化する手順](https://blazor-master.com/blazor-hybrid-maui-rcl/)
